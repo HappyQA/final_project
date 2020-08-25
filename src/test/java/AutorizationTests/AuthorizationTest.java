@@ -27,7 +27,7 @@ public class AuthorizationTest extends BaseTest {
         checkSuccessLogin("Добро пожаловать");
     }
     @Feature("Модуль Authentication")
-    //@Test
+    @Test
     @Description("НЕ успешный вход пользователя")
     public void unSuccessLogin () {
         openAuthModule();
@@ -37,7 +37,7 @@ public class AuthorizationTest extends BaseTest {
         checkUserError("Неверный логин или пароль");
     }
     @Feature("Модуль Authentication")
-    //@Test
+    @Test
     @Description("Нажатие на кнопку Забыли пароль с успешным его сбросом")
     public void successResettingPassword () {
         openAuthModule();
@@ -47,7 +47,7 @@ public class AuthorizationTest extends BaseTest {
         checkUserResetEmail("Мы отправили на адрес пользователя письмо с дальнейшими инструкциями.");
     }
     @Feature("Модуль Authentication")
-    //@Test
+    @Test
     @Description("Нажатие на кнопку Забыли пароль и ввели имя пользователя или пароль которого нет в БД")
     public void unSuccessfulResettingPassword () {
         openAuthModule();
@@ -57,7 +57,7 @@ public class AuthorizationTest extends BaseTest {
         checkUserError("Пользователь не найден.");
     }
     @Feature("Модуль Authentication")
-    //@Test
+    @Test
     @Description("Выполнение входа в учетную запись пользователя с последующим выходом")
     public void loginWithNextExitUser () {
         openAuthModule();

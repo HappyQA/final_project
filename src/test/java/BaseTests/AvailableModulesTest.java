@@ -29,7 +29,7 @@ public class AvailableModulesTest extends BaseTest {
         checkTitlesInModules("Rigspace Administrative Panel");
     }
     @Feature("Модуль Reporting")
-    //@Test
+    @Test
     @Description("Проверка доступности модуля Reporting")
     public void availableReporting () {
         openReportingModule();
